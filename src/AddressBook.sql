@@ -198,4 +198,12 @@ mysql> Select COUNT(*) from AddressBook Where type='Personal';
 +----------+
 1 row in set (0.00 sec)
 
+-- UC-11
+-- Ability to add friend type
 
+mysql>
+mysql> Insert into AddressBook (firstName,lastName,address,city,state,phoneNumber,email,type) Values
+    -> ("Prem","Singh","Kira","Bijnor","Uttar Pradesh","7246778243", "pranav@gmail.com","Friend"),
+    -> ("Shaurabh","Kumar","Patna Junction","Patna","Bihar","3454561234", "ch.kumar@outlook.com","Friend");
+Query OK, 2 rows affected (0.01 sec)
+Records: 2  Duplicates: 0  Warnings: 0
